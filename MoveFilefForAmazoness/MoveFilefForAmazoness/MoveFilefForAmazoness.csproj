@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logics.cs" />
     <Compile Include="MoveFIleForAmazoness.cs">
       <SubType>Form</SubType>
     </Compile>
