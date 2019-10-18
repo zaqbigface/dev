@@ -1,0 +1,1 @@
+c:\users\u2015047.w500000005733\documents\visual studio 2013\Projects\GetEventLog\GetEventLog\bin\Debug\GetEventLog.exe.config
