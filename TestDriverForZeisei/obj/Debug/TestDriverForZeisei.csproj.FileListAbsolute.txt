@@ -1,9 +1,0 @@
-C:\develop\dev\TestDriverForZeisei\obj\Debug\TestDriverForZeisei.csprojAssemblyReference.cache
-C:\develop\dev\TestDriverForZeisei\obj\Debug\TestDriverForZeisei.TestDriverForZeisei.resources
-C:\develop\dev\TestDriverForZeisei\obj\Debug\TestDriverForZeisei.Properties.Resources.resources
-C:\develop\dev\TestDriverForZeisei\obj\Debug\TestDriverForZeisei.csproj.GenerateResource.cache
-C:\develop\dev\TestDriverForZeisei\bin\Debug\TestDriverForZeisei.exe.config
-C:\develop\dev\TestDriverForZeisei\bin\Debug\TestDriverForZeisei.exe
-C:\develop\dev\TestDriverForZeisei\bin\Debug\TestDriverForZeisei.pdb
-C:\develop\dev\TestDriverForZeisei\obj\Debug\TestDriverForZeisei.exe
-C:\develop\dev\TestDriverForZeisei\obj\Debug\TestDriverForZeisei.pdb
