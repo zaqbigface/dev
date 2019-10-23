@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SharpSvn;
@@ -79,8 +80,14 @@ namespace MoveFilefForAmazoness
             //ターゲットのフォルダの設定
             SvnPathTarget local = new SvnPathTarget(path);
 
-            client.Authentication.Clear();
-            client.Authentication.DefaultCredentials = new System.Net.NetworkCredential("zaqbigface", "Z@qbigface691910");
+            //client.Authentication.Clear();
+            //client.Authentication.ForceCredentials("f-yamaguchi@cresco", "gtmw4869");
+            //client.Authentication.DefaultCredentials = new System.Net.NetworkCredential("")
+            //client.Authentication.SslServerTrustHandlers += delegate (object sender, SharpSvn.Security.SvnSslServerTrustEventArgs e)
+            //{
+            //    e.AcceptedFailures = e.Failures;
+            //    e.Save = true;
+            //};
             //client.Authentication.SslServerTrustHandlers += delegate (object sender, SvnSslServerTrustEventArgs e) {
             //    e.AcceptedFailures = e.Failures;
             //    e.Save = true;//Save acceptance to authentication store
@@ -100,5 +107,25 @@ namespace MoveFilefForAmazoness
 
         }
 
+        public DataTable SvnInfoEventArgsToDataTable(SvnInfoEventArgs args)
+        {
+            DataTable dt;
+            dt = new DataTable("SvnInfo");
+
+            //クラスのフィールドと値を取得するのがわからんのだな
+            var type = typeof(SvnInfoEventArgs);
+
+            foreach (var field in type.GetFields())
+            {
+                var name = field.Name;
+                //args.(変数の)nameとかにすれば良いと思ったけど無理そう
+                var value = args.GetType();
+                dt.Columns.Add(name);
+                dt.Rows.Add(value);
+            }
+
+            return dt;
         }
+
+    }
 }

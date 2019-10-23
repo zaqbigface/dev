@@ -28,7 +28,7 @@ namespace MoveFilefForAmazoness
         {
             InitializeComponent();
 
-            //LogicとErrorクラスをあらかじめインスタンス化しておく
+            //LogicクラスとErrorクラスをあらかじめインスタンス化しておく
             _Logic = new Logics();
             _Error = new Error();
         }
@@ -221,7 +221,8 @@ namespace MoveFilefForAmazoness
             List<SvnInfoEventArgs> svninfo = new List<SvnInfoEventArgs>();
             svninfo = _Logic.getSVNInfo();
 
-            SvnInfoEventArgs test = svninfo[1];
+            //本来はリストごと渡してGridViewに表示させたい
+            SvnInfoEventArgs test = svninfo[0];
 
             SVNInfoShow infoShow = new SVNInfoShow(test);
             infoShow.Show();

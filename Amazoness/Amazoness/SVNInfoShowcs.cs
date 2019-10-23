@@ -35,7 +35,9 @@ namespace MoveFilefForAmazoness
 
         private void SVNInfoShow_Load(object sender, EventArgs e)
         {
-            dv.DataSource = args[1];
+            SharpSvn.SvnInfoEventArgs svn;
+            svn = (SharpSvn.SvnInfoEventArgs)args[0];
+            dv.DataSource = svn;
             
         }
     }
